@@ -24,15 +24,6 @@
             padding: 15px 0;
         }
 
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
-
         .nav-links li a {
             color: white;
             text-decoration: none;
@@ -44,6 +35,37 @@
             color: #2E1622;
         }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .nav-center {
+            flex: 1;
+            /* take all space except logo */
+            display: flex;
+            justify-content: center;
+            /* center links horizontally */
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
         main {
             flex: 1;
             display: flex;
@@ -52,7 +74,7 @@
         }
 
         .login-card {
-            background-color: #aa004fff;
+            background-color: #85295A;
             border: 2px solid white;
             border-radius: 8px;
             padding: 30px;
@@ -104,14 +126,18 @@
 
     <!-- Header -->
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="<?= base_url('/') ?>">Home</a></li>
-                <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
-                <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
-                <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
-                <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="<?= base_url('/') ?>">Home</a></li>
+                    <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
+                    <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
+                    <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
+                    <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
+                </ul>
+            </div>
+            <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                alt="Logo" class="logo-img">
         </nav>
     </header>
 

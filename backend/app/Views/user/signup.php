@@ -44,6 +44,26 @@
             color: #2E1622;
         }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
         main {
             flex: 1;
             display: flex;
@@ -52,7 +72,7 @@
         }
 
         .login-card {
-            background-color: #aa004fff;
+            background-color: #85295A;
             border: 2px solid white;
             border-radius: 8px;
             padding: 30px;
@@ -112,6 +132,11 @@
                 <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
                 <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
             </ul>
+            <div class="logo-container">
+                <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                    alt="Logo" class="logo-img">
+            </div>
+        </nav>
         </nav>
     </header>
 
