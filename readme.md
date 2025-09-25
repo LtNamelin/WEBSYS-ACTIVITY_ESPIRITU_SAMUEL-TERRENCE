@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/LtNamelin/">
-    <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg" alt="Nyebe" width="130" height="100">
+    <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg" alt="Nyebe" width="100" height="100">
   </a>
 </div>
 

@@ -47,13 +47,23 @@
         main {
             flex: 1;
             display: flex;
+            flex-direction: column;
+            /* stack items vertically */
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
         main h1 {
-            text-align: center;
             font-size: 2rem;
+            margin-bottom: 15px;
+            /* space between h1 and h2 */
+        }
+
+        main h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            font-style: italic;
         }
 
         footer {
@@ -77,13 +87,13 @@
                 <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
                 <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
             </ul>
-
         </nav>
     </header>
 
     <!-- Main content -->
     <main>
-        <h1>This Website is still Under Development</h1>
+        <h1>Welcome to LtNamelin's Art Portfolio!</h1>
+        <h2>"This website is still under active development."</h2>
     </main>
 
     <!-- Footer -->

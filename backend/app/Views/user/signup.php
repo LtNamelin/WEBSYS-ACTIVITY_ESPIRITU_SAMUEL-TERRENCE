@@ -1,5 +1,5 @@
 <?php
-// signup.php
+// login.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,9 +51,44 @@
             align-items: center;
         }
 
-        main h1 {
+        .login-card {
+            background-color: #aa004fff;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 30px;
+            width: 320px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             text-align: center;
-            font-size: 2rem;
+        }
+
+        .login-card h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .login-card button:hover {
+            background-color: darkgreen;
         }
 
         footer {
@@ -79,9 +114,19 @@
             </ul>
         </nav>
     </header>
+
     <!-- Main content -->
     <main>
-        <h1>Log-in Page Under Development</h1>
+        <div class="login-card">
+            <h2>Sign-up New User</h2>
+            <form>
+                <input type="text" placeholder="E-mail Account" required>
+                <input type="password" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Re-Enter Password" required>
+                <button type="submit">Create User</button>
+            </form>
+        </div>
     </main>
 
     <!-- Footer -->
