@@ -24,14 +24,6 @@
             padding: 15px 0;
         }
 
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
 
         .nav-links li a {
             color: white;
@@ -51,9 +43,18 @@
             padding: 0 2rem;
         }
 
-        .logo-container {
+        .nav-center {
+            flex: 1;
             display: flex;
-            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
         }
 
         .logo-img {
@@ -149,6 +150,7 @@
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             padding: 1rem;
         }
 
@@ -162,9 +164,17 @@
         .logos img {
             width: 120px;
             height: auto;
-            border-radius: 10px;
             background: white;
             padding: 10px;
+            border: 2px solid #fff;
+        }
+
+        .logo-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px;
         }
 
         footer {
@@ -179,19 +189,18 @@
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="<?= base_url('/') ?>">Home</a></li>
-                <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
-                <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
-                <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
-                <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
-            </ul>
-            <div class="logo-container">
-                <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
-                    alt="Logo" class="logo-img">
+        <nav class="navbar">
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="<?= base_url('/') ?>">Home</a></li>
+                    <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
+                    <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
+                    <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
+                    <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
+                </ul>
             </div>
-        </nav>
+            <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                alt="Logo" class="logo-img">
         </nav>
     </header>
 
@@ -246,18 +255,18 @@
             <h2>Card Sample</h2>
             <div class="cards">
                 <div class="card">
-                    <h3>1,254</h3>
-                    <p>Portfolio Pieces Completed</p>
+                    <h3>Artworks include multiple original works and fanart of multiple different franchises.</h3>
+                    <p>Artworks</p>
                 </div>
                 <div class="card">
-                    <h3>Featured Artwork</h3>
-                    <p>Handcrafted painting with vibrant colors and details.</p>
+                    <h3>Commission Info:</h3>
+                    <p>Type of artwork, price, quantity.</p>
                 </div>
                 <div class="card">
                     <blockquote>
-                        "Beautifully designed artwork that truly captures emotion."
+                        "Commission and give this artist all of your money now :3c."
                     </blockquote>
-                    <p>— Viewer</p>
+                    <p>— Adoring Fan</p>
                 </div>
             </div>
         </section>
@@ -267,15 +276,18 @@
             <h2>Logos</h2>
             <div class="logos">
                 <div>
-                    <img src="logo-circle.png" alt="Logo Circle">
+                    <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                        alt="Logo Circle" class="logo-circle">
                     <p>Main — Circle</p>
                 </div>
                 <div>
-                    <img src="logo-square.png" alt="Logo Square">
+                    <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                        alt="Logo Square">
                     <p>Main — Square</p>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->

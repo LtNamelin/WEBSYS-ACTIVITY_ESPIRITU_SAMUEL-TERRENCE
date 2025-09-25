@@ -24,15 +24,6 @@
             padding: 15px 0;
         }
 
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
-
         .nav-links li a {
             color: white;
             text-decoration: none;
@@ -51,9 +42,18 @@
             padding: 0 2rem;
         }
 
-        .logo-container {
+        .nav-center {
+            flex: 1;
             display: flex;
-            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
         }
 
         .logo-img {
@@ -72,14 +72,15 @@
         }
 
         .login-card {
-            background-color: #85295A;
-            border: 2px solid white;
-            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
             padding: 30px;
             width: 320px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
+
 
         .login-card h2 {
             margin-bottom: 20px;
@@ -97,7 +98,7 @@
         .login-card button {
             width: 100%;
             padding: 12px;
-            background-color: green;
+            background-color: #F55DC5;
             color: white;
             border: none;
             border-radius: 4px;
@@ -124,19 +125,18 @@
 
     <!-- Header -->
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="<?= base_url('/') ?>">Home</a></li>
-                <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
-                <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
-                <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
-                <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
-            </ul>
-            <div class="logo-container">
-                <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
-                    alt="Logo" class="logo-img">
+        <nav class="navbar">
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="<?= base_url('/') ?>">Home</a></li>
+                    <li><a href="<?= base_url('/login') ?>">Log-in</a></li>
+                    <li><a href="<?= base_url('/signup') ?>">Sign-up</a></li>
+                    <li><a href="<?= base_url('/moodboard') ?>">Moodboard</a></li>
+                    <li><a href="<?= base_url('/roadmap') ?>">Roadmap</a></li>
+                </ul>
             </div>
-        </nav>
+            <img src="https://pbs.twimg.com/profile_images/1774003426726494208/cROsl2JN_400x400.jpg"
+                alt="Logo" class="logo-img">
         </nav>
     </header>
 

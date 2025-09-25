@@ -44,10 +44,8 @@
 
         .nav-center {
             flex: 1;
-            /* take all space except logo */
             display: flex;
             justify-content: center;
-            /* center links horizontally */
         }
 
         .nav-links {
@@ -74,9 +72,9 @@
         }
 
         .login-card {
-            background-color: #85295A;
-            border: 2px solid white;
-            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
             padding: 30px;
             width: 320px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
@@ -99,7 +97,7 @@
         .login-card button {
             width: 100%;
             padding: 12px;
-            background-color: green;
+            background-color: #F55DC5;
             color: white;
             border: none;
             border-radius: 4px;
