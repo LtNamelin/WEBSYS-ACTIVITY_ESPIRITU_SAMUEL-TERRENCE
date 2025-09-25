@@ -19,8 +19,10 @@ This website is an art portfolio that will be used to upload my artworks, mercha
 </div>
 
 <br/>
+<p align="center">
+  ![](https://visit-counter.vercel.app/counter.png?page=LtNamelin/WEBSYS-ACTIVITY_ESPIRITU_SAMUEL-TERRENCE)
+</p>
 
-![](https://visit-counter.vercel.app/counter.png?page=LtNamelin/WEBSYS-ACTIVITY_ESPIRITU_SAMUEL-TERRENCE)
 
 <!-- ! Make sure it was similar to your github -->
 
