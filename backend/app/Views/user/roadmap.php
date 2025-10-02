@@ -7,65 +7,6 @@
 <?= view('components/head', ['title' => 'Roadmap']); ?>
 <?= view('components/styles'); ?>
 
-<style>
-    /* Page-specific tweaks for Roadmap (keeps design consistent with original) */
-    main h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        font-family: 'Playfair Display', serif;
-    }
-
-    .roadmap {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .card h2 {
-        margin: 0 0 0.5rem 0;
-        font-size: 1.3rem;
-        font-family: 'Playfair Display', serif;
-    }
-
-    .card p {
-        margin: 0 0 1rem 0;
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-    /* Status label colors (matching Moodboard / Roadmap design) */
-    .status {
-        display: inline-block;
-        padding: 0.4rem 1rem;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        font-weight: bold;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        background: transparent;
-    }
-
-    .planned {
-        color: #4da3ff;
-        border-color: #4da3ff;
-    }
-
-    .in-progress {
-        color: #5cd67d;
-        border-color: #5cd67d;
-    }
-
-    .done {
-        color: #00e6b8;
-        border-color: #00e6b8;
-    }
-
-    .backlog {
-        color: #bbbbbb;
-        border-color: #bbbbbb;
-    }
-</style>
-
 <body>
     <?= view('components/header'); ?>
 

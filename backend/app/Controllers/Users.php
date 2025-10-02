@@ -30,4 +30,14 @@ class Users extends BaseController
     {
         return view('user/roadmap');
     }
+
+    public function artworks(): string
+    {
+        return view('user/artworks');
+    }
+
+    public function commissions(): string
+    {
+        return view('user/commissions');
+    }
 }

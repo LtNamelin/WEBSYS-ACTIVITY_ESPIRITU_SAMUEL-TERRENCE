@@ -177,4 +177,88 @@
         padding: 10px 0;
         font-weight: bold;
     }
+
+    /* Styles for Roadmap */
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .card h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.3rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .card p {
+        margin: 0 0 1rem 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .status {
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background: transparent;
+    }
+
+    .planned {
+        color: #4da3ff;
+        border-color: #4da3ff;
+    }
+
+    .in-progress {
+        color: #5cd67d;
+        border-color: #5cd67d;
+    }
+
+    .done {
+        color: #00e6b8;
+        border-color: #00e6b8;
+    }
+
+    .backlog {
+        color: #bbbbbb;
+        border-color: #bbbbbb;
+    }
+
+    /* Login Page */
+    .login-page {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* vertical + horizontal center */
+    }
+
+    .card input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        display: block;
+        /* force new line */
+    }
+
+    .card .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .login-page .card {
+        width: 320px;
+        text-align: center;
+        padding: 30px;
+    }
 </style>

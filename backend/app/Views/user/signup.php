@@ -16,18 +16,14 @@ $title = "Sign-up";
         align-items: center;
     }
 
-    .card {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        padding: 30px;
-        width: 320px;
+    .signup-page .card {
+        width: 360px;
         text-align: center;
     }
 
-    .card input {
+    .signup-page .card input {
         width: 100%;
-        padding: 10px;
+        padding: 5px;
         margin: 10px 0;
         border: none;
         border-radius: 4px;
@@ -35,25 +31,13 @@ $title = "Sign-up";
         display: block;
     }
 
-    .card .btn {
+    .signup-page .card .btn {
         width: 100%;
-        padding: 12px;
-        background-color: #F55DC5;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
         margin-top: 15px;
-    }
-
-    .card .btn:hover {
-        background-color: #c4459a;
     }
 </style>
 
-<body>
+<body class="signup-page">
     <?= view('components/header'); ?>
 
     <!-- Main content -->
