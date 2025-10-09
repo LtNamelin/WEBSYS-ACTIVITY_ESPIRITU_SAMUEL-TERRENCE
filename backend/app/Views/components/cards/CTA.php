@@ -1,0 +1,31 @@
+<?php
+
+$content = <<<HTML
+<div style="text-align:center;">
+    <img src="images/descicon.png" alt="Icon" 
+        style="width: 120px; height: 120px; border-radius:50%; margin-bottom:15px; object-fit:cover;">
+    <p>HA!</p>
+
+    <p><br><br> Social Media:</p>
+    <a href="https://x.com/LtNamelin" target="_blank" rel="noopener noreferrer">
+        <img src="images/x_logo.png" alt="X Icon"
+            style="width: 60px; height: 60px; border-radius:50%; margin-bottom:15px; object-fit:cover;">
+    </a>
+</div>
+HTML;
+
+$title = '';
+$description = '';
+$statusClass = 'fixed-width';
+?>
+
+<style>
+    .card.fixed-width {
+        width: 400px;
+        margin: 2rem auto;
+    }
+</style>
+
+<?php
+// Render the reusable card template
+echo view('components/cards/card', compact('content', 'title', 'description', 'statusClass'));

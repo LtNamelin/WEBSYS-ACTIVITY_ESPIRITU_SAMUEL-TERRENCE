@@ -1,5 +1,4 @@
 <?php
-// card.php
 ?>
 <div class="card <?= $statusClass ?? '' ?>">
     <?php if (!empty($title)): ?>
@@ -14,7 +13,6 @@
         <span class="status <?= $statusClass ?? '' ?>"><?= $statusLabel ?></span>
     <?php endif; ?>
 
-    <!-- New flexible content slot -->
     <?php if (!empty($content)): ?>
         <div class="card-content">
             <?= $content ?>
